@@ -2,6 +2,10 @@ const http = require('http');
 const Koa = require('koa');
 const koaBody = require('koa-body');
 const app = new Koa();
+const port = process.env.PORT || 7070;
+
+           
+     
 
 app.use(koaBody({
     urlencoded: true,
@@ -79,7 +83,7 @@ app.use(async ctx => {
      
           
             
-const server = http.createServer(app.callback()).listen(7070);
+    const server = http.createServer(app.callback()).listen(port)
        
        
        

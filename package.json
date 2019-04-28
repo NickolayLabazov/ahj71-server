@@ -10,6 +10,9 @@
     "build": "webpack --mode production",
     "test": "jest --passWithNoTests"
   },
+  "engines": {
+    "node": "11.x"
+    },         
   "repository": "git+https://github.com/NickolayLabazov/ahj1-environment.git",
   "author": "Nickolay Labazov",
   "license": "ISC",
